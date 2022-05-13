@@ -1,0 +1,169 @@
+@import 'base/reset';
+@import 'base/tools';
+@import 'pages/index';
+@import 'pages/africa';
+@import 'pages/antarctica';
+@import 'pages/brazil';
+@import 'pages/maldives';
+
+@media screen and (max-width: 599px) {
+    .wrapper {
+        .header {
+            .header__wrap-primary {
+                .header__wrap-secondary {
+                    .header__wrap-top {
+                        position: initial;
+                        .header__nav {                            
+                            .header__nav-link {
+                                padding: $marginPx/4;
+                                display: block;
+                            }
+                        }                        
+                    }
+                    .header__heading {
+                        .header__title,
+                        .header__title_antarctica,
+                        .header__title_brazil,
+                        .header__title_africa,
+                        .header__title_maldives {
+                            font-size: 1.6rem;
+                        }
+                        .header__title {
+                            padding-bottom: $marginDeg*1.5;
+                        }
+                        .header__item {
+                            padding: $marginDeg/2 0;
+                        }
+                    }
+                }
+            }
+        }
+        .gallery {
+            .gallery__item-first,
+            .gallery__item-second,
+            .gallery__item-third,
+            .gallery__item-fourth {
+                width: 100%;
+                height: 30vw;
+                border: 3px solid #fff;
+            }
+        }
+        .main {
+            width: 96%;
+            .main__section {
+                display: block;
+                .section__wrap-primary,
+                .section__wrap-secondary {
+                    width: 100%;
+                }
+                .section__wrap-primary {
+                    margin-bottom: $marginDeg/8;
+                }
+            }
+            .main__content {
+                .main__content_heading,
+                .main__content_heading_brazil,
+                .main__content_heading-africa,
+                .main__content_heading_maldives {
+                    .content-heading__title {
+                        font-size: 1.8rem;
+                    }
+                    .content-heading__item {
+                        font-size: 1.2rem;
+                    }
+                }
+                .main__content_wrapper {
+                    .main__content_item {
+                        width: 100%;
+                        .content-item__disc {
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .main__wrapper-third {
+                .main__form {
+                    .main__form_input-wrap {
+                        flex-direction: column;
+                        margin-bottom: 0;
+                        .form__input {
+                            width: 70%;
+                            margin-bottom: $marginDeg/10;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            justify-content: space-between;
+            .footer__link {
+                width: 30%;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 904px) {
+    .wrapper {
+        .header,
+        .header-antarctica,
+        .header-brazil,
+        .header-africa,
+        .header-maldives {
+            .header__wrap-primary {
+                .header__wrap-secondary {
+                    .header__wrap-top {
+                        position: initial;
+                        padding: 0 $marginDeg/7;
+                    }
+                }
+            }
+        }
+        .gallery {
+            .gallery__title {
+                font-size: 1.2rem;
+            }
+        }
+        .main {
+            width: 90%;
+        }
+        .footer {
+            .footer__link {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1239px) {
+    .wrapper {
+        .header {
+            .header__wrap-primary {
+                .header__wrap-secondary {
+                    .header__wrap-top {
+                        .header__logo-wrap {
+                            .header__logo {
+                                padding: $marginPx/5;
+                            }
+                        }
+                        .header__nav {
+                            .header__nav-link {
+                                padding: $marginPx/2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main {
+            .main__content {
+                .main__content_wrapper {
+                    .main__content_item {
+                        width: 49%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1435 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper .header {
+  background-image: url(../imgs/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper .header .header__wrap-primary {
+  background-color: rgba(0, 0, 0, 0.4);
+  /*затемняем бекграунд хидера*/
+}
+
+.wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5%;
+  background-color: rgba(26, 26, 26, 0.5);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top .header__logo-wrap .header__logo {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #c9c9c9;
+  padding: 13.33333px;
+}
+
+.wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top .header__logo-wrap .header__logo-link {
+  text-decoration: none;
+  color: #c9c9c9;
+}
+
+.wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top .header__logo-wrap .header__logo-span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top .header__nav {
+  text-align: end;
+}
+
+.wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top .header__nav .header__nav-link {
+  display: inline-block;
+  color: #fff;
+  font-size: .9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: none;
+}
+
+.wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top .header__nav .header__nav-link:hover {
+  background-color: rgba(201, 201, 201, 0.6);
+}
+
+.wrapper .header .header__wrap-primary .header__wrap-secondary .header__heading {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+.wrapper .header .header__wrap-primary .header__wrap-secondary .header__heading .header__title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding: 20%;
+}
+
+.wrapper .gallery {
+  width: 70%;
+  margin: 0 auto;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 6px solid #fff;
+  overflow: hidden;
+}
+
+.wrapper .gallery .gallery__item-first {
+  background-image: url(../imgs/antarctica-cruise.jpg);
+  background-size: cover;
+  width: 40%;
+  height: 25vw;
+  border-right: 6px solid #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.wrapper .gallery .gallery__item-second {
+  background-image: url(../imgs/maldives_homepage.jpeg);
+  background-size: cover;
+  width: 60%;
+  height: 25vw;
+  text-decoration: none;
+  position: relative;
+}
+
+.wrapper .gallery .gallery__item-third {
+  background-image: url(../imgs/Brazil-fon.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 25vw;
+  border-top: 6px solid #fff;
+  border-right: 6px solid #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.wrapper .gallery .gallery__item-fourth {
+  background-image: url(../imgs/africa_homepage.jpeg);
+  background-size: cover;
+  width: 50%;
+  height: 25vw;
+  border-top: 6px solid #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.wrapper .gallery .gallery__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: #505050 1px 1px 0, #505050 -1px -1px 0, #505050 -1px 1px 0, #505050 1px -1px 0;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
+.wrapper .main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper .main .main__wrapper-primary {
+  margin-bottom: 5%;
+}
+
+.wrapper .main .main__wrapper-primary .main__wrapper-primary_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d554f;
+  margin-bottom: 2.5%;
+}
+
+.wrapper .main .main__wrapper-primary .main__wrapper-primary_item {
+  line-height: 1.5;
+  color: #505050;
+}
+
+.wrapper .main .main__wrapper-secondary {
+  margin-bottom: 5%;
+}
+
+.wrapper .main .main__wrapper-secondary .main__wrapper-secondary_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #505050;
+  text-align: center;
+  margin-bottom: 2.5%;
+}
+
+.wrapper .main .main__wrapper-secondary .main__wrapper-secondary_img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper .main .main__wrapper-secondary .main__wrapper-secondary_img-wrap .main__img-wrap {
+  width: 100%;
+  max-width: 340px;
+  margin-left: 5px;
+}
+
+.wrapper .main .main__wrapper-secondary .main__wrapper-secondary_img-wrap .main__img-wrap .main__img {
+  width: 100%;
+  padding: 0 20%;
+  border: 1px solid #c9c9c9;
+}
+
+.wrapper .main .main__wrapper-third {
+  margin: 0 auto;
+  color: #505050;
+}
+
+.wrapper .main .main__wrapper-third .main__wrapper-third_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.5%;
+}
+
+.wrapper .main .main__wrapper-third .main__wrapper-third_subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.wrapper .main .main__wrapper-third .main__form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.wrapper .main .main__wrapper-third .main__form .main__form_input-wrap {
+  margin-bottom: 2.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .main .main__wrapper-third .main__form .main__form_input-wrap .form__input {
+  width: 30%;
+  padding: 10px 5px;
+  border: 1px solid #c9c9c9;
+}
+
+.wrapper .main .main__wrapper-third .main__form .main__form_textarea-wrap {
+  margin-bottom: 2.5%;
+}
+
+.wrapper .main .main__wrapper-third .main__form .main__form_textarea-wrap .form__textarea {
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  padding: 10px 5px;
+  resize: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper .main .main__wrapper-third .main__form .main__form_submit-wrap {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.wrapper .main .main__wrapper-third .main__form .main__form_submit-wrap .form__submit {
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #c9c9c9;
+  border: none;
+  padding: 10px;
+  color: #505050;
+  cursor: pointer;
+}
+
+.wrapper .main .main__wrapper-third .main__form .main__form_submit-wrap .form__submit:hover {
+  background-color: #ff0101;
+  color: #fff;
+}
+
+.wrapper .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #0d554f;
+  padding: 3.33333%;
+}
+
+.wrapper .footer .footer__contacts_primary-wrap,
+.wrapper .footer .footer__contacts_secondary-wrap {
+  text-align: center;
+}
+
+.wrapper .footer .footer__contacts_primary-wrap .footer__contacts_item,
+.wrapper .footer .footer__contacts_secondary-wrap .footer__contacts_item {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.wrapper .footer .footer__contacts_primary-wrap .footer__contacts_item::before,
+.wrapper .footer .footer__contacts_secondary-wrap .footer__contacts_item::before {
+  content: '\2706';
+  font-size: 1.2rem;
+}
+
+.wrapper .footer .footer__contacts_primary-wrap .footer__contacts_item_special::before,
+.wrapper .footer .footer__contacts_secondary-wrap .footer__contacts_item_special::before {
+  content: '\2709';
+}
+
+.wrapper .footer .footer__contacts_primary-wrap .footer__contacts_item_special,
+.wrapper .footer .footer__contacts_secondary-wrap .footer__contacts_item_special {
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+.wrapper .footer .footer__item-wrap {
+  color: #fff;
+  text-align: center;
+}
+
+.wrapper .footer .footer__item-wrap .footer__item-primary {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.wrapper .footer .footer__item-wrap .footer__item-secondary {
+  font-size: .7rem;
+}
+
+.wrapper .footer .footer__link {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .footer .footer__link .footer__link-wrap {
+  width: 5%;
+  min-width: 40px;
+  margin-right: 4%;
+}
+
+.wrapper .footer .footer__link .footer__link-wrap .footer__link-img {
+  width: 100%;
+}
+
+.wrapper .footer .footer__link .footer__link-wrap .footer__link-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.wrapper .header-africa {
+  background-image: url(../imgs/africa_header.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper .header-africa .header__wrap-primary .header__wrap-secondary .header__heading .header__title_africa {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding-top: 13.33333%;
+}
+
+.wrapper .header-africa .header__wrap-primary .header__wrap-secondary .header__heading .header__item {
+  font-size: 1.3rem;
+  padding: 10%;
+  line-height: 1.2;
+}
+
+.wrapper .gallery .gallery__item-first_africa {
+  background-image: url(../imgs/africa_map.jpeg);
+  background-size: cover;
+  background-position-x: center;
+  width: 40%;
+  height: 25vw;
+  border-right: 6px solid #fff;
+}
+
+.wrapper .gallery .gallery__item-second_africa {
+  background-image: url(../imgs/africa_safari.jpeg);
+  background-size: cover;
+  width: 60%;
+  height: 25vw;
+}
+
+.wrapper .gallery .gallery__item-third_africa {
+  background-image: url(../imgs/africa_helicopter.jpeg);
+  background-size: cover;
+  width: 50%;
+  height: 25vw;
+  border-top: 6px solid #fff;
+  border-right: 6px solid #fff;
+}
+
+.wrapper .gallery .gallery__item-fourth_africa {
+  background-image: url(../imgs/africa_mainland.jpeg);
+  background-size: cover;
+  width: 50%;
+  height: 25vw;
+  border-top: 6px solid #fff;
+}
+
+.wrapper .main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper .main .main__heading {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 5%;
+}
+
+.wrapper .main .main__heading .main__heading_item-span {
+  font-weight: bold;
+  color: #0d554f;
+}
+
+.wrapper .main .main__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6.66667%;
+}
+
+.wrapper .main .main__section .section__wrap-primary,
+.wrapper .main .main__section .section__wrap-secondary {
+  width: 60%;
+  margin-right: 2.5px;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__title,
+.wrapper .main .main__section .section__wrap-secondary .section__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d554f;
+  margin-bottom: 2.5%;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__content,
+.wrapper .main .main__section .section__wrap-secondary .section__content {
+  line-height: 1.5;
+  color: #505050;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__content .section__content_item,
+.wrapper .main .main__section .section__wrap-secondary .section__content .section__content_item {
+  list-style-position: inside;
+  list-style-image: url(../imgs/star.png);
+}
+
+.wrapper .main .main__section .section__wrap-secondary {
+  width: 40%;
+}
+
+.wrapper .main .main__content .main__content_heading-africa {
+  background-image: url(../imgs/africa_content_heading.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 10%;
+}
+
+.wrapper .main .main__content .main__content_heading-africa .content-heading__title {
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: rgba(80, 80, 80, 0.6);
+  padding: 5px;
+}
+
+.wrapper .main .main__content .main__content_heading-africa .content-heading__item {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(201, 201, 201, 0.5);
+  text-shadow: #fff 1px 1px 0, #fff -1px -1px 0, #fff -1px 1px 0, #fff 1px -1px 0;
+  color: #505050;
+  padding: 5%;
+}
+
+.wrapper .main .main__content .main__content_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4% 0 2.22222% 0;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item {
+  width: 32%;
+  line-height: 1.3;
+  margin-bottom: 4%;
+  border: 1px solid #c9c9c9;
+  -webkit-box-shadow: 1px 1px 5px #c9c9c9;
+          box-shadow: 1px 1px 5px #c9c9c9;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d554f;
+  padding: 5px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__disc {
+  padding: 5px;
+  color: #505050;
+  height: 300px;
+  overflow: auto;
+  margin-bottom: 2%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__img-wrap {
+  width: 100%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__img-wrap .content-item__img {
+  width: 100%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_addition .content__addition-item {
+  color: #505050;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_addition .content__addition-item .content__addition-item_element {
+  font-weight: bold;
+  color: #0d554f;
+}
+
+.wrapper .main .main__button-wrap {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.wrapper .main .main__button-wrap .main__button {
+  font-size: 1.2rem;
+  background-color: #ff0101;
+  border: none;
+  padding: 13.33333px 10px;
+  color: #fff;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.wrapper .main .main__button-wrap .main__button:hover {
+  opacity: 1;
+}
+
+.wrapper .main .main__button-wrap .main__button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.wrapper .header-antarctica {
+  background-image: url(../imgs/Emperor-penguins-Antarctica.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper .header-antarctica .header__wrap-primary .header__wrap-secondary .header__heading .header__title_antarctica {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding-top: 13.33333%;
+}
+
+.wrapper .header-antarctica .header__wrap-primary .header__wrap-secondary .header__heading .header__item {
+  font-size: 1.3rem;
+  padding: 10%;
+  line-height: 1.2;
+}
+
+.wrapper .gallery .gallery__item-first_antarctica {
+  background-image: url(../imgs/Antarctica_gall_1.jpg);
+  background-size: cover;
+  width: 40%;
+  height: 25vw;
+  border-right: 6px solid #fff;
+}
+
+.wrapper .gallery .gallery__item-second_antarctica {
+  background-image: url(../imgs/Antarctica_gall_2.jpg);
+  background-size: cover;
+  width: 60%;
+  height: 25vw;
+}
+
+.wrapper .gallery .gallery__item-third_antarctica {
+  background-image: url(../imgs/Antarctica_gall_3.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 25vw;
+  border-top: 6px solid #fff;
+  border-right: 6px solid #fff;
+}
+
+.wrapper .gallery .gallery__item-fourth_antarctica {
+  background-image: url(../imgs/Antarctica_gall_4.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 25vw;
+  border-top: 6px solid #fff;
+}
+
+.wrapper .main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper .main .main__heading {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 5%;
+}
+
+.wrapper .main .main__heading .main__heading_item-span {
+  font-weight: bold;
+  color: #0d554f;
+}
+
+.wrapper .main .main__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6.66667%;
+}
+
+.wrapper .main .main__section .section__wrap-primary,
+.wrapper .main .main__section .section__wrap-secondary {
+  width: 60%;
+  margin-right: 2.5px;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__title,
+.wrapper .main .main__section .section__wrap-secondary .section__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d554f;
+  margin-bottom: 2.5%;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__content,
+.wrapper .main .main__section .section__wrap-secondary .section__content {
+  line-height: 1.5;
+  color: #505050;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__content .section__content_item,
+.wrapper .main .main__section .section__wrap-secondary .section__content .section__content_item {
+  list-style-position: inside;
+  list-style-image: url(../imgs/star.png);
+}
+
+.wrapper .main .main__section .section__wrap-secondary {
+  width: 40%;
+}
+
+.wrapper .main .main__content .main__content_heading {
+  background-image: url(../imgs/iceberg-float.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 10%;
+}
+
+.wrapper .main .main__content .main__content_heading .content-heading__title {
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: rgba(80, 80, 80, 0.6);
+  padding: 5px;
+}
+
+.wrapper .main .main__content .main__content_heading .content-heading__item {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(201, 201, 201, 0.5);
+  text-shadow: #fff 1px 1px 0, #fff -1px -1px 0, #fff -1px 1px 0, #fff 1px -1px 0;
+  color: #505050;
+  padding: 5%;
+}
+
+.wrapper .main .main__content .main__content_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4% 0 2.22222% 0;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item {
+  width: 32%;
+  line-height: 1.3;
+  margin-bottom: 4%;
+  border: 1px solid #c9c9c9;
+  -webkit-box-shadow: 1px 1px 5px #c9c9c9;
+          box-shadow: 1px 1px 5px #c9c9c9;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d554f;
+  padding: 5px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__disc {
+  padding: 5px;
+  color: #505050;
+  height: 300px;
+  overflow: auto;
+  margin-bottom: 2%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__img-wrap {
+  width: 100%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__img-wrap .content-item__img {
+  width: 100%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_addition .content__addition-item {
+  color: #505050;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_addition .content__addition-item .content__addition-item_element {
+  font-weight: bold;
+  color: #0d554f;
+}
+
+.wrapper .main .main__button-wrap {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.wrapper .main .main__button-wrap .main__button {
+  font-size: 1.2rem;
+  background-color: #ff0101;
+  border: none;
+  padding: 13.33333px 10px;
+  color: #fff;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.wrapper .main .main__button-wrap .main__button:hover {
+  opacity: 1;
+}
+
+.wrapper .main .main__button-wrap .main__button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.wrapper {
+  /* // header */
+}
+
+.wrapper .header-brazil {
+  background-image: url(../imgs/Brazil-fon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper .header-brazil .header__wrap-primary .header__wrap-secondary .header__heading .header__title_brazil {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding-top: 13.33333%;
+}
+
+.wrapper .header-brazil .header__wrap-primary .header__wrap-secondary .header__heading .header__item {
+  font-size: 1.3rem;
+  padding: 10%;
+  line-height: 1.2;
+}
+
+.wrapper .gallery .gallery__item-first_brazil {
+  background-image: url(../imgs/Brazil_gall_1.jpg);
+  background-size: cover;
+  width: 40%;
+  height: 25vw;
+  border-right: 6px solid #fff;
+}
+
+.wrapper .gallery .gallery__item-second_brazil {
+  background-image: url(../imgs/Brazil_gall_2.jpg);
+  background-size: cover;
+  width: 60%;
+  height: 25vw;
+}
+
+.wrapper .gallery .gallery__item-third_brazil {
+  background-image: url(../imgs/Brazil_gall_3.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 25vw;
+  border-top: 6px solid #fff;
+  border-right: 6px solid #fff;
+}
+
+.wrapper .gallery .gallery__item-fourth_brazil {
+  background-image: url(../imgs/Brazil_gall_4.jpg);
+  background-size: cover;
+  width: 50%;
+  height: 25vw;
+  border-top: 6px solid #fff;
+}
+
+.wrapper .main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper .main .main__heading {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 5%;
+}
+
+.wrapper .main .main__heading .main__heading_item-span {
+  font-weight: bold;
+  color: #0d554f;
+}
+
+.wrapper .main .main__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6.66667%;
+}
+
+.wrapper .main .main__section .section__wrap-primary,
+.wrapper .main .main__section .section__wrap-secondary {
+  width: 60%;
+  margin-right: 2.5px;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__title,
+.wrapper .main .main__section .section__wrap-secondary .section__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d554f;
+  margin-bottom: 2.5%;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__content,
+.wrapper .main .main__section .section__wrap-secondary .section__content {
+  line-height: 1.5;
+  color: #505050;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__content .section__content_item,
+.wrapper .main .main__section .section__wrap-secondary .section__content .section__content_item {
+  list-style-position: inside;
+  list-style-image: url(../imgs/star.png);
+}
+
+.wrapper .main .main__section .section__wrap-secondary {
+  width: 40%;
+}
+
+.wrapper .main .main__content .main__content_heading_brazil {
+  background-image: url(../imgs/brazil-float.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 10%;
+}
+
+.wrapper .main .main__content .main__content_heading_brazil .content-heading__title {
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: rgba(80, 80, 80, 0.6);
+  padding: 5px;
+}
+
+.wrapper .main .main__content .main__content_heading_brazil .content-heading__item {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(201, 201, 201, 0.5);
+  text-shadow: #fff 1px 1px 0, #fff -1px -1px 0, #fff -1px 1px 0, #fff 1px -1px 0;
+  color: #505050;
+  padding: 5%;
+}
+
+.wrapper .main .main__content .main__content_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4% 0 2.22222% 0;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item {
+  width: 32%;
+  line-height: 1.3;
+  margin-bottom: 4%;
+  border: 1px solid #c9c9c9;
+  -webkit-box-shadow: 1px 1px 5px #c9c9c9;
+          box-shadow: 1px 1px 5px #c9c9c9;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d554f;
+  padding: 5px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__disc {
+  padding: 5px;
+  color: #505050;
+  height: 300px;
+  overflow: auto;
+  margin-bottom: 2%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__img-wrap {
+  width: 100%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__img-wrap .content-item__img {
+  width: 100%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_addition .content__addition-item {
+  color: #505050;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_addition .content__addition-item .content__addition-item_element {
+  font-weight: bold;
+  color: #0d554f;
+}
+
+.wrapper .main .main__button-wrap {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.wrapper .main .main__button-wrap .main__button {
+  font-size: 1.2rem;
+  background-color: #ff0101;
+  border: none;
+  padding: 13.33333px 10px;
+  color: #fff;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.wrapper .main .main__button-wrap .main__button:hover {
+  opacity: 1;
+}
+
+.wrapper .main .main__button-wrap .main__button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.wrapper .header-maldives {
+  background-image: url(../imgs/maldives_header.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper .header-maldives .header__wrap-primary .header__wrap-secondary .header__heading .header__title_maldives {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding-top: 13.33333%;
+}
+
+.wrapper .header-maldives .header__wrap-primary .header__wrap-secondary .header__heading .header__item {
+  font-size: 1.3rem;
+  padding: 10%;
+  line-height: 1.2;
+}
+
+.wrapper .gallery .gallery__item-first_maldives {
+  background-image: url(../imgs/maldives_map.jpeg);
+  background-size: cover;
+  background-position-x: center;
+  width: 40%;
+  height: 25vw;
+  border-right: 6px solid #fff;
+}
+
+.wrapper .gallery .gallery__item-second_maldives {
+  background-image: url(../imgs/maldives_island.jpeg);
+  background-size: cover;
+  width: 60%;
+  height: 25vw;
+}
+
+.wrapper .gallery .gallery__item-third_maldives {
+  background-image: url(../imgs/maldives_plane.jpeg);
+  background-size: cover;
+  width: 50%;
+  height: 25vw;
+  border-top: 6px solid #fff;
+  border-right: 6px solid #fff;
+}
+
+.wrapper .gallery .gallery__item-fourth_maldives {
+  background-image: url(../imgs/maldives_beach.jpeg);
+  background-size: cover;
+  width: 50%;
+  height: 25vw;
+  border-top: 6px solid #fff;
+}
+
+.wrapper .main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper .main .main__heading {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 5%;
+}
+
+.wrapper .main .main__heading .main__heading_item-span {
+  font-weight: bold;
+  color: #0d554f;
+}
+
+.wrapper .main .main__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6.66667%;
+}
+
+.wrapper .main .main__section .section__wrap-primary,
+.wrapper .main .main__section .section__wrap-secondary {
+  width: 60%;
+  margin-right: 2.5px;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__title,
+.wrapper .main .main__section .section__wrap-secondary .section__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d554f;
+  margin-bottom: 2.5%;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__content,
+.wrapper .main .main__section .section__wrap-secondary .section__content {
+  line-height: 1.5;
+  color: #505050;
+}
+
+.wrapper .main .main__section .section__wrap-primary .section__content .section__content_item,
+.wrapper .main .main__section .section__wrap-secondary .section__content .section__content_item {
+  list-style-position: inside;
+  list-style-image: url(../imgs/star.png);
+}
+
+.wrapper .main .main__section .section__wrap-secondary {
+  width: 40%;
+}
+
+.wrapper .main .main__content .main__content_heading_maldives {
+  background-image: url(../imgs/maldives_content_heading.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 10%;
+}
+
+.wrapper .main .main__content .main__content_heading_maldives .content-heading__title {
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: rgba(80, 80, 80, 0.6);
+  padding: 5px;
+}
+
+.wrapper .main .main__content .main__content_heading_maldives .content-heading__item {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(201, 201, 201, 0.5);
+  text-shadow: #fff 1px 1px 0, #fff -1px -1px 0, #fff -1px 1px 0, #fff 1px -1px 0;
+  color: #505050;
+  padding: 5%;
+}
+
+.wrapper .main .main__content .main__content_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4% 0 2.22222% 0;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item {
+  width: 32%;
+  line-height: 1.3;
+  margin-bottom: 4%;
+  border: 1px solid #c9c9c9;
+  -webkit-box-shadow: 1px 1px 5px #c9c9c9;
+          box-shadow: 1px 1px 5px #c9c9c9;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d554f;
+  padding: 5px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__disc {
+  padding: 5px;
+  color: #505050;
+  height: 300px;
+  overflow: auto;
+  margin-bottom: 2%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__img-wrap {
+  width: 100%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__img-wrap .content-item__img {
+  width: 100%;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_addition .content__addition-item {
+  color: #505050;
+}
+
+.wrapper .main .main__content .main__content_wrapper .main__content_addition .content__addition-item .content__addition-item_element {
+  font-weight: bold;
+  color: #0d554f;
+}
+
+.wrapper .main .main__button-wrap {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.wrapper .main .main__button-wrap .main__button {
+  font-size: 1.2rem;
+  background-color: #ff0101;
+  border: none;
+  padding: 13.33333px 10px;
+  color: #fff;
+  cursor: pointer;
+  opacity: .7;
+}
+
+.wrapper .main .main__button-wrap .main__button:hover {
+  opacity: 1;
+}
+
+.wrapper .main .main__button-wrap .main__button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+@media screen and (max-width: 599px) {
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top {
+    position: initial;
+  }
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top .header__nav .header__nav-link {
+    padding: 5px;
+    display: block;
+  }
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__heading .header__title,
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__heading .header__title_antarctica,
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__heading .header__title_brazil,
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__heading .header__title_africa,
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__heading .header__title_maldives {
+    font-size: 1.6rem;
+  }
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__heading .header__title {
+    padding-bottom: 30%;
+  }
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__heading .header__item {
+    padding: 10% 0;
+  }
+  .wrapper .gallery .gallery__item-first,
+  .wrapper .gallery .gallery__item-second,
+  .wrapper .gallery .gallery__item-third,
+  .wrapper .gallery .gallery__item-fourth {
+    width: 100%;
+    height: 30vw;
+    border: 3px solid #fff;
+  }
+  .wrapper .main {
+    width: 96%;
+  }
+  .wrapper .main .main__section {
+    display: block;
+  }
+  .wrapper .main .main__section .section__wrap-primary,
+  .wrapper .main .main__section .section__wrap-secondary {
+    width: 100%;
+  }
+  .wrapper .main .main__section .section__wrap-primary {
+    margin-bottom: 2.5%;
+  }
+  .wrapper .main .main__content .main__content_heading .content-heading__title,
+  .wrapper .main .main__content .main__content_heading_brazil .content-heading__title,
+  .wrapper .main .main__content .main__content_heading-africa .content-heading__title,
+  .wrapper .main .main__content .main__content_heading_maldives .content-heading__title {
+    font-size: 1.8rem;
+  }
+  .wrapper .main .main__content .main__content_heading .content-heading__item,
+  .wrapper .main .main__content .main__content_heading_brazil .content-heading__item,
+  .wrapper .main .main__content .main__content_heading-africa .content-heading__item,
+  .wrapper .main .main__content .main__content_heading_maldives .content-heading__item {
+    font-size: 1.2rem;
+  }
+  .wrapper .main .main__content .main__content_wrapper .main__content_item {
+    width: 100%;
+  }
+  .wrapper .main .main__content .main__content_wrapper .main__content_item .content-item__disc {
+    height: auto;
+  }
+  .wrapper .main .main__wrapper-third .main__form .main__form_input-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .wrapper .main .main__wrapper-third .main__form .main__form_input-wrap .form__input {
+    width: 70%;
+    margin-bottom: 2%;
+  }
+  .wrapper .footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .wrapper .footer .footer__link {
+    width: 30%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 904px) {
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top,
+  .wrapper .header-antarctica .header__wrap-primary .header__wrap-secondary .header__wrap-top,
+  .wrapper .header-brazil .header__wrap-primary .header__wrap-secondary .header__wrap-top,
+  .wrapper .header-africa .header__wrap-primary .header__wrap-secondary .header__wrap-top,
+  .wrapper .header-maldives .header__wrap-primary .header__wrap-secondary .header__wrap-top {
+    position: initial;
+    padding: 0 2.85714%;
+  }
+  .wrapper .gallery .gallery__title {
+    font-size: 1.2rem;
+  }
+  .wrapper .main {
+    width: 90%;
+  }
+  .wrapper .footer .footer__link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1239px) {
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top .header__logo-wrap .header__logo {
+    padding: 4px;
+  }
+  .wrapper .header .header__wrap-primary .header__wrap-secondary .header__wrap-top .header__nav .header__nav-link {
+    padding: 10px;
+  }
+  .wrapper .main .main__content .main__content_wrapper .main__content_item {
+    width: 49%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

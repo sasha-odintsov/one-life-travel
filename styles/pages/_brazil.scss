@@ -1,0 +1,186 @@
+.wrapper {
+    /* // header */
+    .header-brazil {
+        background-image: url(../imgs/Brazil-fon.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        .header__wrap-primary {
+            .header__wrap-secondary {
+                // header heading
+                .header__heading {
+                    .header__title_brazil {
+                        font-size: 2.5rem;
+                        text-transform: uppercase;
+                        padding-top: $marginDeg/1.5;
+                    }
+                    .header__item {
+                        font-size: 1.3rem;
+                        padding: $marginDeg/2;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+    }
+    // gallery
+    .gallery {
+        .gallery__item-first_brazil {
+            background-image: url(../imgs/Brazil_gall_1.jpg);
+            background-size: cover;
+            width: 40%;
+            height: 25vw;
+            border-right: 6px solid #fff;
+        }
+        .gallery__item-second_brazil {
+            background-image: url(../imgs/Brazil_gall_2.jpg);
+            background-size: cover;
+            width: 60%;
+            height: 25vw;
+        }
+        .gallery__item-third_brazil {
+            background-image: url(../imgs/Brazil_gall_3.jpg);
+            background-size: cover;
+            width: 50%;
+            height: 25vw;
+            border-top: 6px solid #fff;
+            border-right: 6px solid #fff;
+        }
+        .gallery__item-fourth_brazil {
+            background-image: url(../imgs/Brazil_gall_4.jpg);
+            background-size: cover;
+            width: 50%;
+            height: 25vw;
+            border-top: 6px solid #fff;
+        }
+    }
+    // main
+    .main {
+        width: 80%;
+        margin: 0 auto;
+        // main heading
+        .main__heading {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-bottom: $marginDeg/4;
+            .main__heading_item-span {
+                font-weight: bold;
+                color: $colorTitle;
+            }
+        }
+        // main section
+        .main__section {
+            display: flex;
+            margin-bottom: $marginDeg/3;
+            .section__wrap-primary,
+            .section__wrap-secondary {
+                width: 60%;
+                margin-right: $marginPx/8;
+                .section__title {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: $colorTitle;
+                    margin-bottom: $marginDeg/8;
+                }
+                .section__content {
+                    line-height: 1.5;
+                    color: $colorContent;
+                    .section__content_item {
+                        list-style-position: inside;
+                        list-style-image: url(../imgs/star.png);
+                    }
+                }
+            }
+            .section__wrap-secondary {
+                width: 40%;
+            }
+        }
+        // main content
+        .main__content {
+            // content heading
+            .main__content_heading_brazil {
+                background-image: url(../imgs/brazil-float.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+                padding: $marginDeg/2;
+                .content-heading__title {
+                    font-size: 2.5rem;
+                    color: #fff;
+                    background-color: rgba($color: $colorContent, $alpha: .6);
+                    padding: $marginPx/4;
+                }
+                .content-heading__item {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    background-color: rgba($color: $colorElements, $alpha: .5);
+                    text-shadow: #fff 1px 1px 0, #fff -1px -1px 0, #fff -1px 1px 0, #fff 1px -1px 0;
+                    color: $colorContent;
+                    padding: $marginDeg/4;
+                }
+            }
+            // content items
+            .main__content_wrapper {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin: $marginDeg/5 0 $marginDeg/9 0;
+                .main__content_item {
+                    width: 32%;
+                    line-height: 1.3;
+                    margin-bottom: $marginDeg/5;
+                    border: 1px solid $colorElements;
+                    box-shadow: 1px 1px 5px $colorElements;
+                    .content-item__title {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: $colorTitle;
+                        padding: $marginPx/4;
+                        border-bottom: 1px solid lighten($color: $colorElements, $amount: 10deg);
+                    }
+                    .content-item__disc {
+                        padding: $marginPx/4;
+                        color: $colorContent;
+                        height: 300px;
+                        overflow: auto;
+                        margin-bottom: $marginDeg/10;
+                    }
+                    .content-item__img-wrap {
+                        width: 100%;
+                        .content-item__img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .main__content_addition {
+                    .content__addition-item {
+                        color: $colorContent;
+                        .content__addition-item_element {
+                            font-weight: bold;
+                            color: $colorTitle;
+                        }
+                    }
+                }
+            }
+        }
+        // main button
+        .main__button-wrap {
+            text-align: center;
+            margin-bottom: $marginDeg/4;
+            .main__button {
+                font-size: 1.2rem;
+                background-color: $backgroundButton;
+                border: none;
+                padding: $marginPx/1.5 $marginPx/2;
+                color: #fff;
+                cursor: pointer;
+                opacity: .7;
+            }
+            .main__button:hover {
+                opacity: 1;
+            }
+            .main__button:active {
+                transform: scale(.95);
+            }
+        }
+    }
+}
